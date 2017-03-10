@@ -9,7 +9,7 @@
         </div>
         <div>
           <p>Average Price: HKD {{restaurant.price}}</p>
-          <p>{{restaurant-hot restaurant}}</p>
+          <p>{{restaurant-hot restaurant}}{{restaurant-cost restaurant}}</p>
           {{#link-to 'restaurantdetail' restaurant.id}}<button type="button" class="btn btn-primary">Details</button>{{/link-to}}
         </div>
       </div>
