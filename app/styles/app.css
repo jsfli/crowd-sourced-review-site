@@ -1,3 +1,9 @@
+.companycolor {
+  background-color: orange;
+  opacity: 1;
+  color: black;
+}
+
 .restaurant_tile {
   background-color: white;
   height: 300px;

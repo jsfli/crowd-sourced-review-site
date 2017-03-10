@@ -9,12 +9,12 @@
         </div>
         <div>
           <p>Price: HKD {{restaurant.price}}</p>
-          <button>Details</button>
+          {{#link-to 'restaurantdetail' restaurant.id}}<button type="button" class="btn btn-primary">Details</button>{{/link-to}}
         </div>
       </div>
     {{/each}}
   </div>
   <div class="col-md-4">
-    <h1>shopping cart</h1>
+    <h1>review cart</h1>
   </div>
 </div>
