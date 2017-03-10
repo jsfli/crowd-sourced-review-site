@@ -14,6 +14,10 @@
   margin: 10px;
   float: left;
 }
+.restaurantdetails img{
+  height:300px;
+  width: 100%;
+}
 
 .restaurant_tile img{
   height: 150px;
