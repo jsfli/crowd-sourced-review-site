@@ -1,1 +1,20 @@
-<h1>Restaurant Reviews</h1>
+<div class="col-md-12">
+  <h1>Restaurant Review</h1>
+  <div class="tile col-md-8">
+    {{#each model as |restaurant|}}
+      <div class="restaurant_tile">
+        <h3 class="text-center">{{restaurant.name}}</h3>
+        <div>
+          <p><img src= {{restaurant.photo}} alt= {{restaurant.name}}></p>
+        </div>
+        <div>
+          <p>Price: HKD {{restaurant.price}}</p>
+          <button>Details</button>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <div class="col-md-4">
+    <h1>shopping cart</h1>
+  </div>
+</div>

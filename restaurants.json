@@ -1,0 +1,23 @@
+{ "restaurants":[{
+    "name": "name 1",
+    "address": "address 1",
+    "price": 500,
+    "photo":"https://cdn.theculturetrip.com/wp-content/uploads/2016/02/restaurant-939435_960_720.jpg",
+    "detail": "details"
+  },{
+    "name": "name 2",
+    "address": "address 2",
+    "price": 500,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ8GJlXue-rG2qqUbanuir3GSAG7CtRPr40kV2LxlPnvLwQkdc",
+    "detail": "details"
+}],
+"reviews":[{
+  "comment": "comment 1",
+  "author": "review 1",
+  "rating": 10
+  },{
+    "comment": "comment 2",
+    "author": "author 2",
+    "rating": 10
+  }]
+}

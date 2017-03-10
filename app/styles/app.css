@@ -1,0 +1,21 @@
+.restaurant_tile {
+  background-color: white;
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px;
+  float: left;
+}
+
+.restaurant_tile img{
+  height: 150px;
+  width: 195px;
+  padding: 1px;
+}
+
+.tile {
+  display: inline-block;
+  height: auto;
+}

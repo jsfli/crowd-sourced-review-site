@@ -1,0 +1,29 @@
+<div>
+  <form>
+    <div class="form-group">
+      <label for="name">Restaurant Name: </label>
+      {{input value=name id="name"}}
+    </div>
+
+    <div class="form-group">
+      <label for="address">Restaurant Address: </label>
+      {{input value=address id="address"}}
+    </div>
+
+    <div class="form-group">
+      <label for="price">Restaurant average price: </label>
+      {{input value=price id="price"}}
+    </div>
+
+    <div class="form-group">
+      <label for="photo">Upload restaurant url: </label>
+      {{input value=photo id="photo"}}
+    </div>
+
+    <div class="form-group">
+      <label class="detail" for="detail">Restaurant highlights: </label>
+      {{input value=detail id="detail"}}
+    </div>
+    <button {{action 'addNewRestaurant'}}>Add New Restaurant</button>
+  </form>
+</div>
