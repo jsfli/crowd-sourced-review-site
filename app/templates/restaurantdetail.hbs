@@ -7,9 +7,13 @@
 
   {{new-review saveReview="saveReview" restaurant=model}}
 
-  <ul>
-    {{#each restaurant.reviews as |review|}}
-      {{review-tile review=review}}
+  <div>
+    <h1>Past Comments</h1>
+    {{#each model.reviews as |review|}}
+      <hr>
+      <p>Ratings: {{review.rating}}</p>
+      <p>Comments: {{review.comment}}</p>
+      <p>Reviewer: {{review.author}}</p>
     {{/each}}
-  </ul>
+  </div>
 </div>
