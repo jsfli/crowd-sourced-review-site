@@ -1,7 +1,15 @@
-<div class="container restaurantdetails col-md-6">
+<div class="container restaurantdetails col-md-12">
   <h2>{{model.name}}'s details</h2>
   <p><img src={{model.photo}}></p>
   <p>Address: {{model.address}}</p>
   <p>Details: {{model.detail}}</p>
   <p>Average Price: HKD {{model.price}}</p>
+
+  {{new-review saveReview="saveReview" restaurant=model}}
+
+  <ul>
+    {{#each restaurant.reviews as |review|}}
+      {{review-tile review=review}}
+    {{/each}}
+  </ul>
 </div>
