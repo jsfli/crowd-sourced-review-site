@@ -5,6 +5,9 @@ export default Ember.Route.extend({
     return this.store.findRecord('restaurant', params.restaurant_id);
   },
 
+  sortBy: ['rating:desc'],
+  sortedReviews: Ember.computed.sort('model.reviews', 'sortBy'),
+
   actions: {
     saveReview(params) {
       var newReview = this.store.createRecord('review',params);
@@ -14,5 +17,10 @@ export default Ember.Route.extend({
         return restaurant.save();
       });
     }
+  },
+  setupController(controller,model){
+    this._super(controller,model);
+    controller.set('sortedReviews',this.get('sortedReviews'));
+    controller.set('sortBy',this.get('sortBy'));
   }
 });
